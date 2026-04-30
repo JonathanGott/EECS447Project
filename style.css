@@ -1,0 +1,187 @@
+/* Reset browser defaults */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Page styling */
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0e1116;
+    color: #f5f7fb;
+  }
+  
+  
+  /*  NAVBAR  */
+  
+  .navbar {
+    height: 80px;
+    padding: 0 40px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    border-bottom: 1px solid #252b35;
+  }
+  
+  .navbar nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar a {
+    color: #b8beca;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #8fb4f5;
+  }
+  
+  
+  /*  MAIN  */
+  
+  main {
+    padding: 60px;
+  }
+  
+  
+  /*  CARDS  */
+  
+  .hero-card,
+  .movie-card,
+  .details-card,
+  .review-card {
+    background: #151a22;
+    border: 1px solid #28303d;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  
+  
+  /*  HERO  */
+  
+  .hero-card {
+    text-align: center;
+    padding: 70px;
+  }
+  
+  .eyebrow {
+    color: #9aa3b4;
+    letter-spacing: 3px;
+  }
+  
+  .hero-card h2 {
+    font-size: 50px;
+  }
+  
+  .subtitle {
+    color: #b8beca;
+  }
+  
+  
+  /*  SEARCH  */
+  
+  .search-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+  }
+  
+  .search-box button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    background: #8fb4f5;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /*  GRID  */
+  
+  .section {
+    margin-top: 50px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  /*  MOVIE CARD  */
+  
+  .movie-card {
+    transition: 0.2s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8fb4f5;
+  }
+  
+  
+  /*  DETAILS  */
+  
+  .details-card {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+  }
+  
+  .average-rating {
+    color: #ffd166;
+    font-weight: bold;
+  }
+  
+  
+  /*  FORM  */
+  
+  .review-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .review-form select,
+  .review-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .review-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #8fb4f5;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  
+  /*  REVIEWS  */
+  
+  .reviews-list {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .stars {
+    color: #ffd166;
+  }
