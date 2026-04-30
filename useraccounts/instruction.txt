@@ -1,0 +1,70 @@
+MySQL Setup Instructions (Mac)
+
+1. Install MySQL using Homebrew
+
+In terminal, run:
+brew install mysql
+
+Start MySQL:
+brew services start mysql
+
+
+2. Open MySQL
+
+In terminal:
+mysql -u root
+
+
+3. Create Database
+
+CREATE DATABASE movie_review_db;
+USE movie_review_db;
+
+
+4. Create Tables
+
+CREATE TABLE User (
+  User_ID INT AUTO_INCREMENT PRIMARY KEY,
+  Username VARCHAR(50) UNIQUE NOT NULL,
+  Email VARCHAR(100) UNIQUE NOT NULL,
+  Password VARCHAR(255) NOT NULL
+);
+
+5. Verify Tables
+
+SHOW TABLES;
+
+Expected output:
+User
+
+
+
+6. Exit MySQL
+
+exit;
+
+
+7. Connect PHP to MySQL
+
+In db.php:
+
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "movie_review_db";
+
+
+8. Run PHP Server
+
+In project folder:
+
+php -S localhost:8000
+
+Open browser:
+http://localhost:8000/index.php
+
+
+Notes:
+- PHP variables ($host, etc.) are NOT MySQL commands and should not be typed in MySQL.
+- Tables only need to be created once.
+- Errors like "table already exists" are normal if you run commands multiple times.
