@@ -18,6 +18,7 @@
     <a href="index.php">Search</a>
 
     <?php if (isset($_SESSION["user_id"])): ?>
+      <a href="my_reviews.php">My Reviews</a>
       <a href="logout.php">Logout</a>
     <?php else: ?>
       <a href="login.php">Login</a>
