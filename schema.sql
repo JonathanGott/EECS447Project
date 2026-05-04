@@ -30,16 +30,3 @@ CREATE TABLE IF NOT EXISTS Review (
     FOREIGN KEY (User_ID) REFERENCES User(User_ID) ON DELETE CASCADE,
     FOREIGN KEY (Movie_ID) REFERENCES Movie(Movie_ID) ON DELETE CASCADE
 );
-
--- Sample movie data
-INSERT INTO Movie (Title, Genre, Release_Year, Director) VALUES
-('The Shawshank Redemption', 'Drama', 1994, 'Frank Darabont'),
-('The Godfather', 'Crime', 1972, 'Francis Ford Coppola'),
-('The Dark Knight', 'Action', 2008, 'Christopher Nolan'),
-('Pulp Fiction', 'Crime', 1994, 'Quentin Tarantino'),
-('Forrest Gump', 'Drama', 1994, 'Robert Zemeckis'),
-('Inception', 'Sci-Fi', 2010, 'Christopher Nolan'),
-('The Matrix', 'Sci-Fi', 1999, 'The Wachowskis'),
-('Goodfellas', 'Crime', 1990, 'Martin Scorsese'),
-('Interstellar', 'Sci-Fi', 2014, 'Christopher Nolan'),
-('Fight Club', 'Drama', 1999, 'David Fincher');
