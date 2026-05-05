@@ -111,7 +111,7 @@ INSERT INTO Movie (Title, Genre, Release_Year, Director) VALUES
 ('Ready Player One','Sci-Fi',2018,'Steven Spielberg'),
 ('The Revenant','Drama',2015,'Alejandro Inarritu'),
 ('Birdman','Drama',2014,'Alejandro Inarritu'),
-('La La Land','Musical',2016,'Damien Chazelle')
+('La La Land','Musical',2016,'Damien Chazelle'),
 
 ('Superbad','Comedy',2007,'Greg Mottola'),
 ('Step Brothers','Comedy',2008,'Adam McKay'),
